@@ -22,10 +22,17 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "commit": "cz",
-    "lint": "npx eslint .",
+    "lint": "npx eslint \"**/*.{ts,tsx}\"",
     "lint:fix": "npx eslint --fix",
     "format:check": "npx prettier --check \"**/*.{js,jsx,ts,tsx,yml,yaml,json,css,scss,md}\"",
     "format": "npx prettier --write \"**/*.{js,jsx,ts,tsx,yml,yaml,json,css,scss,md}\""
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.25.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.31.10"
   },
   "eslintConfig": {
     "extends": [
