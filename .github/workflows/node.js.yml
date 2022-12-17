@@ -41,7 +41,6 @@ jobs:
       - name: Run the tests and generate coverage report
         run: npm test -- --coverage
 
-      - run: npm run lint
       - run: npm run format:check
       - run: npm test -- --coverage
         env:
