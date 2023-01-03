@@ -1,7 +1,7 @@
 import AuthSlice, {initialState, signIn, signOut} from "./authSlice";
 
 describe("authSlice", () => {
-  test("initialize with initial value", () => {
+  test("should initialize with initial value", () => {
     const authSliceInit = AuthSlice(initialState, {type: "unknown"});
     expect(authSliceInit).toBe(initialState);
   });
