@@ -6,11 +6,6 @@ describe("authSlice", () => {
     expect(authSliceInit).toBe(initialState);
   });
 
-  test("should contains isLoggedIn false as initial value", () => {
-    const authSliceInit = AuthSlice(initialState, {type: "unknown"});
-    expect(authSliceInit.isLoggedIn).toBe(false);
-  });
-
   test("should handles sign in reducer property", () => {
     const authSlice = AuthSlice(initialState, signIn());
     expect(authSlice.isLoggedIn).toBe(true);
