@@ -3,7 +3,7 @@ import {render, RenderOptions} from "@testing-library/react";
 import {configureStore, PreloadedState} from "@reduxjs/toolkit";
 import {Provider} from "react-redux";
 // As a basic setup, import your same slice reducers
-import authReducers from "../store/auth/authSlice";
+import authReducers, {initialState as authInitialState} from "../store/auth/authSlice";
 import {AppStore, RootState} from "../store";
 
 interface ExtendedRenderOptions extends Omit<RenderOptions, "queries"> {
@@ -14,7 +14,9 @@ interface ExtendedRenderOptions extends Omit<RenderOptions, "queries"> {
 export function renderWithProviders(
   ui: React.ReactElement,
   {
-    preloadedState = {},
+    preloadedState = {
+      auth: authInitialState
+    },
     // Automatically create a store instance if no store was passed in
     store = configureStore({
       reducer: {auth: authReducers},
