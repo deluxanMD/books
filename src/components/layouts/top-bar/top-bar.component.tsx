@@ -4,7 +4,7 @@ import {AppBar, Toolbar, Typography} from "@mui/material";
 
 const TopBar = () => {
   return (
-    <AppBar>
+    <AppBar data-testid="TopBar.Container">
       <Toolbar disableGutters>
         <AccountBalanceWalletIcon sx={{display: {xs: "none", md: "flex"}, mr: 1, pl: 1}} />
         <Typography

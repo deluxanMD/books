@@ -1,4 +1,3 @@
-import React from "react";
 import {useState} from "react";
 import {TextField} from "@mui/material";
 import {Controller, useFormContext} from "react-hook-form";
@@ -23,10 +22,6 @@ const PasswordField = ({name, helperText, autoComplete, ...rest}: PasswordFieldT
     setShowPassword(!showPassword);
   };
 
-  const handleMouseDownPassword = (event: any) => {
-    event.preventDefault();
-  };
-
   return (
     <Controller
       name={name}
@@ -47,7 +42,6 @@ const PasswordField = ({name, helperText, autoComplete, ...rest}: PasswordFieldT
               <InputAdornment position="end">
                 <IconButton
                   onClick={handleClickShowPassword}
-                  onMouseDown={handleMouseDownPassword}
                   edge="end"
                   data-testid="PasswordField.IconButton"
                 >

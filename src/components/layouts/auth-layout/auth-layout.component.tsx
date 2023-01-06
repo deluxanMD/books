@@ -6,6 +6,7 @@ const AuthLayout = () => {
   return (
     <Box
       component="main"
+      data-testid="Layout.Auth"
       sx={{
         display: "flex",
         alignItems: "center",
