@@ -20,6 +20,6 @@ describe("<TopBar/>", () => {
 
   test("should render proper title", () => {
     // eslint-disable-next-line testing-library/no-node-access
-    expect(screen.getByText("EXPENSE TRACKER").closest("a")).toHaveAttribute("href", "/");
+    expect(screen.getByText("EXPENSES").closest("a")).toHaveAttribute("href", "/");
   });
 });
