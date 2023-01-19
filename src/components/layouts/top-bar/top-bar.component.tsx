@@ -16,12 +16,11 @@ const TopBar = () => {
             mr: 2,
             display: {xs: "none", md: "flex"},
             fontWeight: 700,
-            letterSpacing: ".3rem",
             color: "inherit",
             textDecoration: "none"
           }}
         >
-          EXPENSES
+          Expense Tracker
         </Typography>
       </Toolbar>
     </AppBar>
