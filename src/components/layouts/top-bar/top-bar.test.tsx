@@ -14,12 +14,12 @@ describe("<TopBar/>", () => {
   });
 
   test("should render proper logo", () => {
-    const logo = screen.getByTestId("AccountBalanceWalletIcon");
+    const logo = screen.getByTestId("MenuBookIcon");
     expect(logo).toBeInTheDocument();
   });
 
   test("should render proper title", () => {
     // eslint-disable-next-line testing-library/no-node-access
-    expect(screen.getByText("Expense Tracker").closest("a")).toHaveAttribute("href", "/");
+    expect(screen.getByText("Books").closest("a")).toHaveAttribute("href", "/");
   });
 });

@@ -1,12 +1,12 @@
 import React from "react";
-import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
+import MenuBookIcon from "@mui/icons-material/MenuBook";
 import {AppBar, Toolbar, Typography} from "@mui/material";
 
 const TopBar = () => {
   return (
     <AppBar data-testid="TopBar.Container">
       <Toolbar disableGutters>
-        <AccountBalanceWalletIcon sx={{display: {xs: "none", md: "flex"}, mr: 1, pl: 1}} />
+        <MenuBookIcon sx={{display: {xs: "none", md: "flex"}, mr: 1, pl: 1}} />
         <Typography
           variant="h6"
           noWrap
@@ -20,7 +20,7 @@ const TopBar = () => {
             textDecoration: "none"
           }}
         >
-          Expense Tracker
+          Books
         </Typography>
       </Toolbar>
     </AppBar>
